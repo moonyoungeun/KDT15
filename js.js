@@ -113,17 +113,30 @@
 
 
 
-let fruits1 = ["사과", "딸기", "파인애플", "수박", "참외", "오렌지", "자두", "망고"];
-let fruits2 = ["수박", "사과", "참외", "오렌지", "파인애플", "망고"];
+// let fruits1 = ["사과", "딸기", "파인애플", "수박", "참외", "오렌지", "자두", "망고"];
+// let fruits2 = ["수박", "사과", "참외", "오렌지", "파인애플", "망고"];
 
-let same = [];
-let diff = [];
+// let same = [];
+// let diff = [];
 
-same = fruits1.filter((item)=>fruits2.includes(item));
+// same = fruits1.filter((item)=>fruits2.includes(item));
 
-fruits1.forEach(function(item){
-    if(fruits2.includes(item)){
-        same.push(item);
-    }
-})
+// fruits1.forEach(function(item){
+//     if(fruits2.includes(item)){
+//         same.push(item);
+//     }
+// })
 
+
+// let numbers = [1, 2, 3, 4, 5, 6];
+// let fruits = ["사과", "바나나", "수박", "포도", "파인애플"];
+// fruits.forEach(function (number, index, array) {
+//   console.log(number, index, array);
+// });
+
+const fruits = ["사과", "파인애플", "수박", "포도", "오렌지"];
+let obj = fruits.map((a, b) => ({
+ id: b,
+ name: a,
+}))
+console.log(obj);
